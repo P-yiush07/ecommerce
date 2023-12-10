@@ -89,7 +89,7 @@ const CreateAccountForm: React.FC = () => {
         error={errors.email}
         type="email"
       />
-       <Input
+      <Input
         name="name"
         label="Full Name"
         required

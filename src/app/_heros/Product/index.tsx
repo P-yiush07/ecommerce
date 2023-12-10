@@ -18,17 +18,15 @@ export const ProductHero: React.FC<{
       <div className={classes.mediaWrapper}>
         {!metaImage && <div className={classes.placeholder}>No image</div>}
         {metaImage && typeof metaImage !== 'string' && (
-         <Media imgClassName={classes.image} resource={metaImage} fill />
+          <Media imgClassName={classes.image} resource={metaImage} fill />
         )}
       </div>
 
       <div className={classes.details}>
+        <h3 className={classes.title}>{title}</h3>
 
-         <h3 className={classes.title}>{title}</h3>
-
-        <div className={classes.categoryWrapper}>        
+        <div className={classes.categoryWrapper}>
           <div className={classes.categories}>
-
             {categories?.map((category, index) => {
               const { title: categoryTitle } = category as Category
 
